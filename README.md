@@ -140,21 +140,6 @@ Final_Score = Scaled_Risk × 1000
 2. **Data Coverage**: Percentage of wallets with sufficient transaction history
 3. **Score Distribution**: Ensuring reasonable spread across risk categories
 
-## Implementation Improvements
-
-### Issues with Original Code
-1. **Limited API Usage**: Only fetching normal transactions
-2. **Incomplete Contract List**: Missing many Compound V2/V3 contracts
-3. **Static Risk Calculation**: Same weights producing similar scores
-4. **No USD Normalization**: All calculations in raw token amounts
-5. **Simplified Function Detection**: Limited function signature recognition
-
-### Enhanced Solutions
-1. **Multi-API Approach**: Normal, internal, and token transactions
-2. **Comprehensive Contract Coverage**: Complete Compound V2/V3 contract list
-3. **Dynamic Risk Weighting**: Sophisticated component analysis
-4. **USD Value Estimation**: Normalized financial metrics
-5. **Advanced Pattern Recognition**: Behavioral and temporal analysis
 
 ## Usage Instructions
 
@@ -165,19 +150,3 @@ Final_Score = Scaled_Risk × 1000
    - `wallet_risk_scores.csv`: Main results (wallet_id, score)
    - `detailed_risk_analysis.csv`: Comprehensive metrics
    - `risk_scoring_summary.json`: Summary statistics
-
-## Scalability Considerations
-
-- **Rate Limiting**: Configurable based on API tier
-- **Batch Processing**: Processes wallets sequentially with progress tracking
-- **Error Handling**: Graceful failure handling with high-risk fallback scores
-- **Memory Efficiency**: Processes one wallet at a time
-- **Extensibility**: Modular design allows easy addition of new risk factors
-
-## Future Enhancements
-
-1. **Real-time Price Feeds**: Integration with DEX aggregators for accurate USD values
-2. **Machine Learning**: Training models on labeled liquidation data
-3. **Cross-protocol Analysis**: Including other DeFi protocols for comprehensive risk assessment
-4. **Real-time Monitoring**: Continuous score updates for position changes
-5. **Backtesting Framework**: Historical validation of risk predictions
