@@ -1,0 +1,14 @@
+{
+  "total_wallets": 103,
+  "successful_analysis": 103,
+  "no_compound_activity": 0,
+  "failed_processing": 0,
+  "mean_score": 758.6019417475728,
+  "median_score": 809.0,
+  "min_score": 454,
+  "max_score": 836,
+  "std_score": 99.70931925223529,
+  "low_risk_count": 0,
+  "medium_risk_count": 17,
+  "high_risk_count": 86
+}
